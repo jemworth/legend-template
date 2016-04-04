@@ -1,0 +1,264 @@
+extends layout
+
+block content
+	// ******************** HeaderWrap ********************
+	#headerwrap
+		header.clearfix
+			h1
+				span Legend! We make web a beautiful place.
+			.container
+				.row
+					.span12
+						h2 Signup for our Newsletter to be updated
+						input.cform-text(type='text', name='your-email', placeholder='you@yourmail.com', size='40', title='your email')
+						input.cform-submit(type='submit', value='Notify me')
+				.row
+					.span12
+						ul.icon
+							li
+								a(href='#', target='_blank')
+									i.icon-pinterest-circled
+							li
+								a(href='#', target='_blank')
+									i.icon-facebook-circled
+							li
+								a(href='#', target='_blank')
+									i.icon-twitter-circled
+							li
+								a(href='#', target='_blank')
+									i.icon-gplus-circled
+							li
+								a(href='#', target='_blank')
+									i.icon-skype-circled
+	// ******************** Feature ********************
+	.scrollblock
+		section#feature
+			.container
+				.row
+					.span12
+						article
+							p We work to make web a beautiful place.
+							p We craft beautiful designs and convert them into
+							p fully functional and user-friendy web app.
+	hr
+	// ******************** Portfolio Section ********************
+	section#portfolio.single-page.scrollblock
+		.container
+			.align
+				i.icon-desktop-circled
+			h1#folio-headline Portfolio...
+			.row
+				.span4
+					.mask2
+						a(href='img/portfolio-01.jpg', rel='prettyPhoto')
+							img(src='img/portfolio-01.jpg', alt='')
+					.inside
+						hgroup
+							h2 Ethan Marcotte Design
+						.entry-content
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+							a.more-link(href='#') view project
+				.span4
+					.mask2
+						a(href='img/portfolio-02.jpg', rel='prettyPhoto')
+							img(src='img/portfolio-02.jpg', alt='')
+					.inside
+						hgroup
+							h2 A Book Apart
+						.entry-content
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+							a.more-link(href='#') view project
+				.span4
+					.mask2
+						a(href='img/portfolio-03.jpg', rel='prettyPhoto')
+							img(src='img/portfolio-03.jpg', alt='')
+					.inside
+						hgroup
+							h2 Four Rules for Designers
+						.entry-content
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+							a.more-link(href='#') view project
+			.row
+				.span4
+					.mask2
+						a(href='img/portfolio-01.jpg', rel='prettyPhoto')
+							img(src='img/portfolio-03.jpg', alt='')
+					.inside
+						hgroup
+							h2 Ethan Marcotte Design
+						.entry-content
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+							a.more-link(href='#') view project
+				.span4
+					.mask2
+						a(href='img/portfolio-02.jpg', rel='prettyPhoto')
+							img(src='img/portfolio-01.jpg', alt='')
+					.inside
+						hgroup
+							h2 A Book Apart
+						.entry-content
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+							a.more-link(href='#') view project
+				.span4
+					.mask2
+						a(href='img/portfolio-03.jpg', rel='prettyPhoto')
+							img(src='img/portfolio-02.jpg', alt='')
+					.inside
+						hgroup
+							h2 Four Rules for Designers
+						.entry-content
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+							a.more-link(href='#') view project
+	hr
+	// ******************** Services Section ********************
+	section#services.single-page.scrollblock
+		.container
+			.align
+				i.icon-cog-circled
+			h1 Services
+			.row
+				.span3
+					.align
+						i.icon-desktop.sev_icon
+					h2 Web design
+					p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+				.span3
+					.align
+						i.icon-vector.sev_icon
+					h2 Print Design
+					p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+				.span3
+					.align
+						i.icon-basket.sev_icon
+					h2 Ecommerce
+					p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+				.span3
+					.align
+						i.icon-mobile-1.sev_icon
+					h2 Marketing
+					p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+	hr
+	// ******************** Testimonials Section ********************
+	section#testimonials.single-page.hidden-phone
+		.container
+			.row
+				.blockquote-wrapper
+					blockquote.mega
+						.span4
+							p.cite John Doe & Sons:
+						.span8
+							p.alignright "We highly appreciate the enthusiasm and creative talent of the people at Legend!"
+	hr
+	// ******************** News Section ********************
+	section#news.single-page.scrollblock
+		.container
+			.align
+				i.icon-pencil-circled
+			h1 Our Blog
+			.row
+				article.span4.post
+					img.img-news(src='img/blog_img-01.jpg', alt='')
+					.inside
+						p.post-date 
+							i.icon-calendar March 17, 2013
+						h2 A girl running on a road
+						.entry-content
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. …
+							a.more-link(href='#') read more
+				article.span4.post
+					img.img-news(src='img/blog_img-02.jpg', alt='')
+					.inside
+						p.post-date February 28, 2013
+						h2 A bear sleeping on a tree
+						.entry-content
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. …
+							a.more-link(href='#') read more
+				article.span4.post
+					img.img-news(src='img/blog_img-03.jpg', alt='')
+					.inside
+						p.post-date February 06, 2013
+						h2 A Panda playing with his baby
+						.entry-content
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. …
+							a.more-link(href='#') read more
+			a.btn.btn-large(href='#') Go to our blog
+	hr
+	// ******************** Team Section ********************
+	section#team.single-page.scrollblock
+		.container
+			.align
+				i.icon-group-circled
+			h1 Meet the team
+			.row
+				.span2.offset1
+					.teamalign
+						img.team-thumb.img-circle(src='img/portrait-1.jpg', alt='')
+					h3 Andrew
+					.job-position web designer
+				.span2
+					.teamalign
+						img.team-thumb.img-circle(src='img/portrait-2.jpg', alt='')
+					h3 Stephen
+					.job-position web developer
+				.span2
+					.teamalign
+						img.team-thumb.img-circle(src='img/portrait-3.jpg', alt='')
+					h3 Maria
+					.job-position graphic designer
+				.span2
+					.teamalign
+						img.team-thumb.img-circle(src='img/portrait-4.jpg', alt='')
+					h3 John
+					.job-position project manager
+				.span2
+					.teamalign
+						img.team-thumb.img-circle(src='img/portrait-2.jpg', alt='')
+					h3 Ashton
+					.job-position real owner
+			.row
+				.span10.offset1
+					hr.featurette-divider
+					.featurette
+						h2.featurette-heading Want to know more? 
+							span.muted | a little about us
+						p Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por scientie, musica, sport etc, litot Europa usa li sam vocabular. Li lingues differe solmen in li grammatica, li pronunciation e li plu commun vocabules. Omnicos directe al desirabilite de un nov lingua franca: On refusa continuar payar custosi traductores.
+						p At solmen va esser necessi far uniform grammatica, pronunciation e plu sommun paroles. Ma quande lingues coalesce, li grammatica del resultant lingue es plu simplic e regulari quam ti del coalescent lingues.
+						p A un Angleso it va semblar un simplificat Angles, quam un skeptic Cambridge amico dit me que Occidental es.
+				hr.featurette-divider
+	// ******************** Contact Section ********************
+	section#contact.single-page.scrollblock
+		.container
+			.align
+				i.icon-mail-2
+			h1 Contact us now!
+			.row
+				.span12
+					#theme-form.cform
+						form.cform-form(action='#', method='post')
+							.row
+								.span6
+									span.your-name
+										input.cform-text(type='text', name='your-name', placeholder='Your Name', size='40', title='your name')
+								.span6
+									span.your-email
+										input.cform-text(type='text', name='your-email', placeholder='Your Email', size='40', title='your email')
+							.row
+								.span6
+									span.company
+										input.cform-text(type='text', name='company', placeholder='Your Company', size='40', title='company')
+								.span6
+									span.website
+										input.cform-text(type='text', name='website', placeholder='Your Website', size='40', title='website')
+							.row
+								.span12
+									span.message
+										textarea.cform-textarea(name='message', cols='40', rows='10', title='drop us a line.')
+							<br>
+							div
+								input.cform-submit.pull-left(type='submit', value='Send message')
+							.cform-response-output
+	hr
+	.footer-wrapper
+		.container
+			footer
+				small © 2013 Inbetwin Network. All rights reserved.
